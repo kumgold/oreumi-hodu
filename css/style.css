@@ -196,19 +196,37 @@ html {
     gap: 5.2rem;
 }
 
-.subscribe-article {
+.subscribe-container {
     margin-top: 9rem;
     background-color: #263140;
     border-radius: 3rem;
     padding: 5rem 5.8rem;
     color: white;
     z-index: 20;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-email-box {
+    border-radius: 6rem;
+    padding: 0.4rem 0.4rem 0.4rem 2.8rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.subscribe-input {
+    border: none;
+    margin: 0 1.6rem;
 }
 
 .subscribe-info-container {
     display: flex;
     flex-direction: column;
     gap: 1.8rem;
+    min-width: 0;
 }
 
 .subscribe-title {

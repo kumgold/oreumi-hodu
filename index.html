@@ -101,7 +101,8 @@
                     <button class="main-button">Learn More</button>
                 </div>
             </section>
-            <article class="subscribe-article">
+            <section class="subscribe-container">
+                <h2 class="sr-only">subscribe to your email</h2>
                 <div class="subscribe-info-container">
                     <p class="subscribe-title">Subscribe to our Blog post</p>
                     <p class="description">
@@ -110,7 +111,20 @@
                         industry's standard dummy text
                     </p>
                 </div>
-            </article>
+                <form class="input-email-box" action="">
+                    <img src="./img/mail.svg" alt="" />
+                    <label class="sr-only" for="subscribe"
+                        >Write yor email</label
+                    >
+                    <input
+                        class="subscribe-input description"
+                        type="text"
+                        id="subscribe"
+                        placeholder="Enter your e-mail address"
+                    />
+                    <button class="main-button">Subscribe</button>
+                </form>
+            </section>
         </main>
         <img class="bottom-image" src="./img/img_5.png" alt="" />
         <footer class="footer screen-x-margin">
