@@ -418,7 +418,6 @@ html {
 
     .contents-container {
         padding: 2.4rem 0;
-        display: flex;
         flex-direction: column;
         gap: 5.8rem;
     }
