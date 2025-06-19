@@ -60,6 +60,10 @@ html {
     z-index: 10;
 }
 
+.mobile-menu {
+    display: none;
+}
+
 .nav-list {
     display: flex;
     gap: 3rem;
@@ -104,7 +108,6 @@ html {
     font-family: SpoqaHanSansNeo-Regular;
     font-size: 1.6rem;
     line-height: 140%;
-    letter-spacing: 0%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -215,9 +218,23 @@ html {
     background-color: white;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.input-email-box .main-button {
+    flex: 1;
+}
+
+.subscribe-form {
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .subscribe-input {
+    min-width: 0;
+    width: 100%;
     border: none;
     margin: 0 1.6rem;
 }
@@ -242,10 +259,15 @@ html {
     z-index: 0;
 }
 
-.footer {
+.contents-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding: 4.6rem 0;
+}
+
+.address-container {
+    display: none;
 }
 
 .contents-list {
@@ -264,8 +286,164 @@ html {
     background-color: #f29d52;
 }
 
+.color-primary {
+    color: var(--primary);
+}
+
+.color-secondary {
+    color: var(--secondary);
+}
+
 @media (max-width: 1200px) {
-    .box-cat {
+    .screen-x-margin {
+        margin-inline: clamp(3.2rem, 3vw, 4rem);
+    }
+
+    .header {
+        height: 79.4rem;
+    }
+
+    .header-title {
+        font-size: 2.4rem;
+    }
+
+    .header-nav-container {
         display: none;
+    }
+
+    .mobile-menu {
+        display: inline;
+    }
+
+    .description {
+        font-size: 1.4rem;
+        overflow: visible;
+        text-overflow: none;
+        white-space: wrap;
+    }
+
+    .description-container {
+        align-items: center;
+        text-align: center;
+        margin: 0;
+    }
+
+    .header-content-container {
+        margin-top: 4rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .box-cat {
+        margin: 0;
+        aspect-ratio: 197/422;
+        width: 19.7rem;
+    }
+
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .main-image {
+        width: 100%;
+    }
+
+    .hodu-info-container {
+        margin-top: 4rem;
+        width: 100%;
+        gap: 2rem;
+    }
+
+    .hodu-info-title {
+        font-size: 2.4rem;
+    }
+
+    .section-title {
+        margin-top: 6rem;
+        font-size: 2.4rem;
+    }
+
+    .section-description {
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    .learn-container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .learn-container .main-button {
+        margin-left: auto;
+    }
+
+    .subscribe-container {
+        margin-top: 5rem;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 3.2rem 3rem;
+        gap: 2rem;
+    }
+
+    .subscribe-container .main-button {
+        margin-left: auto;
+    }
+
+    .input-email-box {
+        padding: 1.1rem 1.6rem;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .subscribe-input {
+        flex: 1;
+    }
+
+    .bottom-image {
+        height: 24rem;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contents-container {
+        padding: 2.4rem 0;
+        display: flex;
+        flex-direction: column;
+        gap: 5.8rem;
+    }
+
+    .contents-item {
+        width: 3.2rem;
+        height: 3.2rem;
+        aspect-ratio: 1/1;
+    }
+
+    .footer-logo {
+        width: 11.2rem;
+    }
+
+    .address-container {
+        display: flex;
+    }
+
+    .address-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+    }
+
+    .address-item {
+        text-align: end;
     }
 }

@@ -12,7 +12,7 @@
             <nav class="top-navigation screen-x-margin">
                 <h1 class="sr-only">HODU</h1>
                 <img src="./img/logo.svg" alt="HODU" />
-                <div class="header-nav-container">
+                <div class="header-nav-container desktop-only">
                     <ul class="nav-list">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
@@ -20,6 +20,7 @@
                     </ul>
                     <button class="main-button">Download</button>
                 </div>
+                <img class="mobile-menu" src="./img/menu.svg" alt="MENU" />
             </nav>
             <div class="header-content-container screen-x-margin">
                 <div class="description-container">
@@ -62,8 +63,9 @@
                     dummy text of the printing and dummy
                 </p>
                 <p class="description section-description">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.<br />
+                    Lorem Ipsum is simply
+                    <span class="color-primary">dummy text</span> of the
+                    printing and typesetting industry.<br />
                     Lorem Ipsum has been the industry's standard dummy text ever
                     since the 1500s, when an unknown
                 </p>
@@ -111,38 +113,58 @@
                         industry's standard dummy text
                     </p>
                 </div>
-                <form class="input-email-box" action="">
-                    <img src="./img/mail.svg" alt="" />
-                    <label class="sr-only" for="subscribe"
-                        >Write yor email</label
-                    >
-                    <input
-                        class="subscribe-input description"
-                        type="text"
-                        id="subscribe"
-                        placeholder="Enter your e-mail address"
-                    />
+                <div class="input-email-box">
+                    <form class="subscribe-form" action="submit">
+                        <img src="./img/mail.svg" alt="" />
+                        <label class="sr-only" for="subscribe"
+                            >Write yor email</label
+                        >
+                        <input
+                            class="subscribe-input description"
+                            type="text"
+                            id="subscribe"
+                            placeholder="Enter your e-mail address"
+                        />
+                    </form>
                     <button class="main-button">Subscribe</button>
-                </form>
+                </div>
             </section>
         </main>
         <img class="bottom-image" src="./img/img_5.png" alt="" />
         <footer class="footer screen-x-margin">
-            <img src="./img/logo.png" alt="" />
-            <ul class="contents-list">
-                <li class="contents-item">
-                    <a href="#"><img src="./img/blog.svg" alt="" /></a>
-                </li>
-                <li class="contents-item">
-                    <a href="#"><img src="./img/instagram.svg" alt="" /></a>
-                </li>
-                <li class="contents-item">
-                    <a href="#"><img src="./img/facebook.svg" alt="" /></a>
-                </li>
-                <li class="contents-item">
-                    <a href="#"><img src="./img/youtube.svg" alt="" /></a>
-                </li>
-            </ul>
+            <div class="contents-container">
+                <img class="footer-logo" src="./img/logo.png" alt="" />
+                <ul class="contents-list">
+                    <li class="contents-item">
+                        <a href="#"><img src="./img/blog.svg" alt="" /></a>
+                    </li>
+                    <li class="contents-item">
+                        <a href="#"><img src="./img/instagram.svg" alt="" /></a>
+                    </li>
+                    <li class="contents-item">
+                        <a href="#"><img src="./img/facebook.svg" alt="" /></a>
+                    </li>
+                    <li class="contents-item">
+                        <a href="#"><img src="./img/youtube.svg" alt="" /></a>
+                    </li>
+                </ul>
+            </div>
+            <address class="address-container">
+                <ul class="address-list">
+                    <li class="address-item description">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="address-item description">
+                        <a href="#">Blog</a>
+                    </li>
+                    <li class="address-item description">
+                        <a href="#">Support</a>
+                    </li>
+                    <li class="address-item description">
+                        <a href="#">Terms of Use</a>
+                    </li>
+                </ul>
+            </address>
         </footer>
     </body>
 </html>
