@@ -419,6 +419,16 @@ html {
         text-align: center;
     }
 
+    .image-list {
+        justify-content: flex-start;
+        overflow-x: scroll;
+        scrollbar-width: none;
+    }
+
+    .sub-image {
+        width: 26rem;
+    }
+
     .learn-container {
         flex-direction: column;
         gap: 3rem;
